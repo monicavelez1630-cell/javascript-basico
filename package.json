@@ -1,0 +1,23 @@
+
+
+{
+  "name": "javascript-basico-clase",
+  "version": "1.0.0",
+  "description": "Ejercicios de JavaScript básico para estudiantes",
+  "main": "src/ejercicios.js",
+  "scripts": {
+    "test": "jest src/ejercicios.test.js --verbose",
+    "test:watch": "jest src/ejercicios.test.js --watch",
+    "start": "node src/ejercicios.js"
+  },
+  "keywords": ["javascript", "ejercicios", "clase", "principiantes"],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  }
+}
