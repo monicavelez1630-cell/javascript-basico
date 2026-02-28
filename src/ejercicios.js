@@ -8,32 +8,34 @@
 // ██████  VARIABLES (Tests 1-6) ████████████████████████
 
 // Test 1:
-const nuevaString = null;
+const nuevaString = "hola nkd sdfkj ";
 
 // Test 2:
-const nuevoNum = null;
+const nuevoNum = 24;
 
 // Test 3:
-const nuevoBool = null;
+const nuevoBool = false;
 
 // Test 4:
-const nuevaResta = null;
+const nuevaResta = 10 - 5 === 5;
 
 // Test 5:
-const nuevaMultiplicacion = null;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Test 6:
-const nuevoModulo = null;
+const nuevoModulo = 21 % 5 === 1;
 
 // ██████  FUNCIONES (Tests 7-35) ████████████████████████
 
 // Test 7:
 function devolverString(str) {
-	return null;
+	return str;
 }
 
 // Test 8:
-function suma(x, y) {}
+function suma(x, y) {
+	return x + y;
+}
 
 // Test 9:
 function resta(x, y) {}
@@ -45,13 +47,19 @@ function divide(x, y) {}
 function multiplica(x, y) {}
 
 // Test 12:
-function sonIguales(x, y) {}
+function sonIguales(x, y) {
+	return x === y;
+}
 
 // Test 13:
-function tienenMismaLongitud(str1, str2) {}
+function tienenMismaLongitud(str1, str2) {
+	return str1.length === str2.length;
+}
 
 // Test 14:
-function menosQueNoventa(num) {}
+function menosQueNoventa(num) {
+	return num < 90;
+}
 
 // Test 15:
 function mayorQueCincuenta(num) {}
@@ -60,7 +68,9 @@ function mayorQueCincuenta(num) {}
 function obtenerResto(x, y) {}
 
 // Test 17:
-function esPar(num) {}
+function esPar(num) {
+	return num / 2 === 0;
+}
 
 // Test 18:
 function esImpar(num) {}

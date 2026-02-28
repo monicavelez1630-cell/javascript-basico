@@ -1,16 +1,27 @@
-
-
 {
   "name": "javascript-basico-clase",
   "version": "1.0.0",
-  "description": "Ejercicios de JavaScript básico para estudiantes",
+  "description": "Ejercicios de JavaScript básico para estudiantes - Serie 1 y 2",
   "main": "src/ejercicios.js",
   "scripts": {
-    "test": "jest src/ejercicios.test.js --verbose",
-    "test:watch": "jest src/ejercicios.test.js --watch",
-    "start": "node src/ejercicios.js"
+    "start": "node src/ejercicios.js",
+    "test": "jest src/*.test.js --collectCoverage=false --verbose",
+    "test:serie1": "jest src/ejercicios.test.js --collectCoverage=false --verbose",
+    "test:serie2": "jest src/ejercicios2.test.js --collectCoverage=false --verbose",
+    "test:all": "jest src/*.test.js --collectCoverage=false --verbose",
+    "test:watch": "jest src/*.test.js --watch --collectCoverage=false",
+    "test:watch1": "jest src/ejercicios.test.js --watch --collectCoverage=false",
+    "test:watch2": "jest src/ejercicios2.test.js --watch --collectCoverage=false",
+    "test:debug": "jest src/*.test.js --detectOpenHandles --verbose",
+    "test:failures": "jest src/*.test.js --onlyFailures --collectCoverage=false"
   },
-  "keywords": ["javascript", "ejercicios", "clase", "principiantes"],
+  "keywords": [
+    "javascript",
+    "ejercicios",
+    "clase",
+    "principiantes",
+    "educación"
+  ],
   "author": "Tu Nombre",
   "license": "MIT",
   "devDependencies": {
@@ -18,6 +29,18 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "verbose": true
+    "verbose": true,
+    "testMatch": [
+      "**/src/**/*.test.js"
+    ],
+    "testResultsProcessor": "./.reporter/index.js",
+    "collectCoverage": false,
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "testTimeout": 5000,
+    "clearMocks": true
   }
 }
